@@ -1,2 +1,3 @@
 # PIC16A-Project
-With Glenda, Armine, and Ryan
+Penguins Project
+Stephe, Glenda, Armine, and Ryan
