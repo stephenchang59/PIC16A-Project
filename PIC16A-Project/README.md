@@ -7,5 +7,5 @@ Description of Demo File: ??? (with 2 figures embedded)
 Scope and Limitations: There are no ethical concerns, but there are some limitations to the data. The Palmer Penguins dataset only contains data on 3 species of penguins. If we wanted to learn more about all species of penguins, this dataset would not be enough to answer all of our questions. A possible extension using a dataset with more data from all species of penguins would allow us to visualize data on all species of penguins.
 References and Acknowledgement: References to PIC16A Fall 22 taught by Harlin.
 The dataset used is Palmer Penguins. This is a dataset containing various measurements of 3 different species of penguins collected in the Palmer Archipelago by Dr. Kristen Gorman. We used to .csv file found on Canvas.
-Links to Tutorials: ??? (include 3 things that differentiate our project from tutorial0
+Links to Tutorials: ??? (include 3 things that differentiate our project from tutorial)
 Software Demo Video: ???
