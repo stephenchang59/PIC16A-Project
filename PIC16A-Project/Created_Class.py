@@ -1,6 +1,13 @@
-# Created_Class
+import pandas as pd
+from matplotlib import pyplot as plt
 from sklearn import tree, preprocessing
+import numpy as np
+import sklearn
 from sklearn.model_selection import cross_val_score, train_test_split
+import os
+import importlib
+
+# Created_Class
 class classifier:
     '''
     Creates and fits either KNN or Decision tree model based on users picked columns of interest and hyperparameters 
@@ -27,17 +34,37 @@ class classifier:
             #CREATE CLASSIFIER 
         else: 
             raise TypeError
-    def training_accuracy(self): 
+    def training_accuracy(self):
+        np.random.seed(1)
         self.clf.fit(self.train[self.X_vars], self.train[self.y])
-        print(self.clf.score(self.train[self.X_vars], self.train[self.y]))     
+        return (self.clf.score(self.train[self.X_vars], self.train[self.y]))
+        #print(self.clf.score(self.train[self.X_vars], self.train[self.y]))     
     def cross_validate(self):
-        print(cross_val_score(self.clf, self.train[self.X_vars], self.train[self.y], cv = 5).mean())
+        np.random.seed(1)
+        return (cross_val_score(self.clf, self.train[self.X_vars], self.train[self.y], cv = 5).mean())
+        #print(cross_val_score(self.clf, self.train[self.X_vars], self.train[self.y], cv = 5).mean())
         #CREATE GRAPHIC WITH THESE SCORES
+    
     def cross_validate_for_hyperparameter(self, lower_bound, upper_bound):
-        if self.model_name == "Decision Tree": 
-            for i in range(lower_bound, upper_bound+1):
+        np.random.seed(1)
+        fig, ax = plt.subplots(1, figsize = (10,8))
+        crossValList = [] #creates empty list for cross validation scores
+        trainList = [] # empty list for training scores
+        list_x = list(range(lower_bound, upper_bound + 1)) # list for hyperparameter values
+        for i in range(lower_bound, upper_bound + 1):
+            if self.model_name == "Decision Tree":
                 Z = classifier("Decision Tree", self.train, self.test, self.X_vars, self.y, hyperparameter_decision_tree = i)
-                Z.cross_validate()
+            if self.model_name == "Knn":
+                Z = classifier("Knn", self.train, self.test, self.X_vars, self.y, hyperparameter_decision_tree = i)
+            crossValList.append(Z.cross_validate()) # appends current cross validation scores to crossValList
+            trainList.append(Z.training_accuracy()) # appends current cross validation scores to trainList
+        ax.scatter(list_x, trainList, label = 'Training score')
+        ax.scatter(list_x, crossValList, label = 'Cross Validation score')
+        ax.set(xlabel = 'Hyperparameter', ylabel = 'Cross Validation Score')
+        plt.legend(fontsize = 20)
+        plt.title('Cross Validation for Hyperparameter')
+        plt.show()
+        
         #DO THIS FOR KNN
     def testing_accuracy(self):
         print(self.clf.score(self.test[self.X_vars], self.test[self.y])) 
