@@ -7,9 +7,7 @@ Python Packages Used: matplotlib 3.4.3, sklearn 1.1.3, numpy 1.20.3, pandas 1.3.
 
 Description of Demo File: 
     First, the demo file cleans the data and preforms EDA using the custom function with the user specified columns of interest. 
-    
-    Then it constructs decision tree model with specified columns of intrest using default hyperparameter. It measures preformance of the decision tree model with training accuracy and cross validation accuracy. Next, it adjusts the decision tree model hyperparameter and determines the best hyperparameter while also providing a graphic. The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix.  
-    
+    Then it constructs decision tree model with specified columns of intrest using default hyperparameter. It measures preformance of the decision tree model with training accuracy and cross validation accuracy. Next, it adjusts the decision tree model hyperparameter and determines the best hyperparameter while also providing a graphic. The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix. 
      Then it constructs knn model with specified columns of intrest using default hyperparameter. It measures preformance of the knn model with training accuracy and cross validation accuracy. Next, it adjusts the knn model hyperparameter and determines the best hyperparameter while also providing a graphic. The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix.  
       
       
