@@ -5,11 +5,26 @@ For our group project, we decided to do the clustering penguin analysis. We will
 
 Python Packages Used: matplotlib 3.4.3, sklearn 1.1.3, numpy 1.20.3, pandas 1.3.4, seaborn 0.11.2
 
-Description of Demo File: 
+Description of Demo File/Walk through:
+\
+We wanted to give the user flexibility in selecting which feature to predict and which features to include in the model. 
+\
+\
     First, the demo file cleans the data and preforms EDA using the custom function with the user specified columns of interest. 
-    Then it constructs decision tree model with specified columns of intrest using default hyperparameter. It measures preformance of the decision tree model with training accuracy and cross validation accuracy. Next, it adjusts the decision tree model hyperparameter and determines the best hyperparameter while also providing a graphic. The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix. 
-     Then it constructs knn model with specified columns of intrest using default hyperparameter. It measures preformance of the knn model with training accuracy and cross validation accuracy. Next, it adjusts the knn model hyperparameter and determines the best hyperparameter while also providing a graphic. The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix.  
-      
+    ![image](https://user-images.githubusercontent.com/103079590/206025695-2bbc06bb-ee95-4c35-bd60-c17bf0b8d747.png)
+    ![image](https://user-images.githubusercontent.com/103079590/206026083-12c749b7-dd70-4c12-98f2-df4c40aeb694.png)
+    ![image](https://user-images.githubusercontent.com/103079590/206026132-a2e89a32-5972-43a6-9232-ae99f3e5464b.png)
+    \
+    Then it constructs decision tree model with specified columns of intrest using default hyperparameter. In this case we used culmen length and island to predict species. It measures preformance of the decision tree model with training accuracy and cross validation accuracy. Next, it adjusts the decision tree model hyperparameter and determines the best hyperparameter while also providing a graphic for reference.
+    \
+    ![image](https://user-images.githubusercontent.com/103079590/206026253-a39f7f10-8778-41cc-8925-ee10c2a91411.png)
+The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix. 
+    ![image](https://user-images.githubusercontent.com/103079590/206028239-4fc04c64-20fa-4628-8017-8a6ae2ba5f69.png)
+    Then it constructs knn model with specified columns of intrest using default hyperparameter. In this case we used flipper length and body mass. It measures preformance of the knn model with training accuracy and cross validation accuracy. Next, it adjusts the knn model hyperparameter and determines the best hyperparameter while also providing a graphic. 
+    ![image](https://user-images.githubusercontent.com/103079590/206026518-68d22a68-c985-4154-a9d6-f0e13029fc10.png)
+    The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix.  
+      ![image](https://user-images.githubusercontent.com/103079590/206026591-91e36193-3c56-4c45-b29d-24650ee9ec0a.png)
+
       
    
 
