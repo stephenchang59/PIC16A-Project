@@ -60,4 +60,5 @@ References and Acknowledgement: References to PIC16A Fall 22 taught by Harlin.
 The dataset used is Palmer Penguins. This is a dataset containing various measurements of 3 different species of penguins collected in the Palmer Archipelago by Dr. Kristen Gorman. We used to .csv file found on Canvas.
 
 Links to Tutorials: NA 
-Software Demo Video: NA 
+\
+Software Demo Video: https://www.youtube.com/watch?v=KP_4243vP1I
