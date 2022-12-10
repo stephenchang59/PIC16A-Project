@@ -39,7 +39,7 @@ The user should then reconstruct the model with the best hyperparameter and meas
     knn = classifier("Knn", train, test, ["Flipper Length (mm)", "Body Mass (g)"], "Species")
     \
     \
-    In this case we used flipper length and body mass. It measures preformance of the knn model with training accuracy and cross validation accuracy. Next, it adjusts the knn model hyperparameter and determines the best hyperparameter while also providing a graphic. 
+    In this case we used the features flipper length and body mass. It measures preformance of the knn model with training accuracy and cross validation accuracy. Next, it adjusts the knn model hyperparameter and determines the best hyperparameter while also providing a graphic. 
     ![image](https://user-images.githubusercontent.com/103079590/206026518-68d22a68-c985-4154-a9d6-f0e13029fc10.png)
     The user should then reconstruct the model with the best hyperparameter and measure the performance with training, cross valdiation, testing accuracy, and confusion matrix.  
     \
